@@ -1,0 +1,146 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# Latin 拉丁語輸入法詞庫
+#
+# 使用說明：
+#   本輸入法用於輸入拉丁語長短音符和合字。
+#
+#   【Macron 長音符】（主要）
+#     a- / aa → ā    A- / AA → Ā
+#     e- / ee → ē    E- / EE → Ē
+#     i- / ii → ī    I- / II → Ī
+#     o- / oo → ō    O- / OO → Ō
+#     u- / uu → ū    U- / UU → Ū
+#     y- / yy → ȳ    Y- / YY → Ȳ
+#
+#   【Breve 短音符】（次要）
+#     a` → ă    A` → Ă
+#     e` → ĕ    E` → Ĕ
+#     i` → ĭ    I` → Ĭ
+#     o` → ŏ    O` → Ŏ
+#     u` → ŭ    U` → Ŭ
+#     y` → y̆    Y` → Y̆
+#
+#   【Ligatures 合字】（次要）
+#     aee / ae- → æ    AEE / AE- → Æ
+#     oee / oe- → œ    OEE / OE- → Œ
+#
+#   普通拉丁字母直接輸入即可。
+#
+# Author:
+#   - Felix Li <liyb.gz@gmail.com>
+#   - 2026.01.08
+#
+
+---
+name: latin
+version: "2026.01.08"
+sort: original
+...
+
+# ===== 單獨輸入時保持原樣 =====
+a	a
+A	A
+e	e
+E	E
+i	i
+I	I
+o	o
+O	O
+u	u
+U	U
+y	y
+Y	Y
+-	-
+`	`
+
+# ===== Macron 長音符 (hyphen system) =====
+ā	a-
+Ā	A-
+ē	e-
+Ē	E-
+ī	i-
+Ī	I-
+ō	o-
+Ō	O-
+ū	u-
+Ū	U-
+ȳ	y-
+Ȳ	Y-
+
+# ===== Macron 長音符 (double letter system) =====
+ā	aa
+ā	aA
+Ā	AA
+Ā	Aa
+ē	ee
+ē	eE
+Ē	EE
+Ē	Ee
+ī	ii
+ī	iI
+Ī	II
+Ī	Ii
+ō	oo
+ō	oO
+Ō	OO
+Ō	Oo
+ū	uu
+ū	uU
+Ū	UU
+Ū	Uu
+ȳ	yy
+ȳ	yY
+Ȳ	YY
+Ȳ	Yy
+
+# ===== Breve 短音符 =====
+ă	a`
+Ă	A`
+ĕ	e`
+Ĕ	E`
+ĭ	i`
+Ĭ	I`
+ŏ	o`
+Ŏ	O`
+ŭ	u`
+Ŭ	U`
+y̆	y`
+Y̆	Y`
+
+# ===== Ligatures 合字 (double e system) =====
+æ	aee
+æ	aeE
+æ	aEe
+æ	aEE
+Æ	AEE
+Æ	AEe
+Æ	Aee
+Æ	AeE
+œ	oee
+œ	oeE
+œ	oEe
+œ	oEE
+Œ	OEE
+Œ	OEe
+Œ	Oee
+Œ	OeE
+
+# ===== Ligatures 合字 (hyphen system) =====
+æ	ae-
+æ	aE-
+Æ	AE-
+Æ	Ae-
+œ	oe-
+œ	oE-
+Œ	OE-
+Œ	Oe-
+
+# ===== 非合字的 ae, oe 組合 =====
+ae	ae
+AE	AE
+Ae	Ae
+oe	oe
+OE	OE
+Oe	Oe
